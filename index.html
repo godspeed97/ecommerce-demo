@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="petStoreApp">
+<head>
+    <title>PetStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body ng-controller="petStoreCtrl as petStore">
+<div class="navbar">
+    <a class="navbar-brand" ui-sref="petstore">PET STORE</a>
+    <shopping-cart-summary/>
+</div>
+<div class="alert alert-danger" ng-show="petStore.data.error">
+    Error ({{petStore.data.error.status}}). The product data was not loaded.
+    <a ui-sref="petstore" class="alert alert-link">Click here to try again</a>
+</div>
+<div ui-view="petstoreContent"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="js/appRouting.js"></script>
+<script src="controllers/petStoreController.js"></script>
+<script src="controllers/productListController.js"></script>
+<script src="controllers/cartSummaryController.js"></script>
+<script src="components/productsService.js"></script>
+<script src="components/shoppingCart/shoppingCart.js"></script>
+<script src="components/shoppingCart/shoppingCartSummary.js"></script>
+<script src="components/shoppingCart/shoppingCartPanel.js"></script>
+<script src="filters/customFilters.js"></script>
+</body>
+</html>
