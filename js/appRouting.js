@@ -10,7 +10,7 @@
                     url: '/',
                     views: {
                         'petstoreContent@': {
-                            templateUrl: '/views/productList.html',
+                            templateUrl: '/views/main/productList.html',
                             controller: 'petStoreCtrl',
                             controllerAs: 'petStore'
                         }
@@ -20,7 +20,7 @@
                     url: '/checkout',
                     views: {
                         'petstoreContent@': {
-                            templateUrl: '/views/checkoutSummary.html'
+                            templateUrl: '/views/main/checkoutSummary.html'
                         }
                     }
                 })
@@ -28,7 +28,7 @@
                     url: '/placeorder',
                     views: {
                         'petstoreContent@': {
-                            templateUrl: '/views/placeOrder.html'
+                            templateUrl: '/views/main/placeOrder.html'
                         }
                     }
                 })
@@ -36,7 +36,7 @@
                     url: '/complete',
                     views: {
                         'petstoreContent@': {
-                            templateUrl: '/views/thankYou.html'
+                            templateUrl: '/views/main/thankYou.html'
                         }
                     }
                 });

@@ -7,7 +7,7 @@
         
         return {
             restrict: 'AE',
-            templateUrl: '/components/shoppingCart/shoppingCartPanel.html',
+            templateUrl: '/views/shoppingCart/shoppingCartPanel.html',
             controller: function () {
                
                 var vm = this;

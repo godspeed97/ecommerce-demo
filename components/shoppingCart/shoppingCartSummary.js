@@ -1,13 +1,13 @@
 (function () {
 
     angular.module('shoppingCart')
-        .directive('shoppingCartSummary', shoppingCartSummary)
+        .directive('shoppingCartSummary', shoppingCartSummary);
 
     function shoppingCartSummary(shoppingCart) {
 
         return {
             restrict: 'AE',
-            templateUrl: '/components/shoppingCart/shoppingCartSummary.html',
+            templateUrl: '/views/shoppingCart/shoppingCartSummary.html',
             controller: function () {
 
                 var vm = this;
